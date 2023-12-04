@@ -1,3 +1,5 @@
 module.exports.profile = (req, res)=>{
-    return res.end('<h1>welcome to the users profile</h1>')
+    return res.render('user_profile', {
+        title: "HomePage"
+    })
 }
