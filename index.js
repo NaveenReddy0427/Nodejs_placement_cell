@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 3500;
+// setup the layouts
+const expressLayouts = require('express-ejs-layouts');
+app.use(expressLayouts);
 
 // setup router middleware
 app.use('/', require('./routes/index'));
